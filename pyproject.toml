@@ -1,0 +1,28 @@
+[project]
+name = "search-execution"
+version = "0.1.0"
+description = "Execution framework for open and automated systematic literature searches"
+authors = [
+    { name = "Gerit Wagner", email = "g.wagner@fs.de" },
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8, <4"
+dependencies = [
+    "search-query>=0.15.0",
+]
+
+[project.urls]
+Repository = "https://github.com/CoLRev-Environment/search-execution"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/search_execution"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

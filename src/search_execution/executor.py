@@ -1,0 +1,1 @@
+"""Generic search execution functionality."""
